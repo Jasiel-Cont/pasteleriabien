@@ -1,0 +1,102 @@
+/*En toda la página*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size:25px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(138, 191, 237);
+    position: relative;
+    min-height: 95vh;
+}
+
+header{
+    background-color: rgb(216, 143, 6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    /*Para subrayar*/
+    text-decoration: underline;
+}
+
+nav ul{
+    /*Al escribir la siguiente línea le quitamos los puntitos a la lista desordenada.*/
+    list-style: none;
+    /*Con las siguientes 2 líneas le quitamos el margin y padding a las palabras inicio, productos, nosotros, contacto*/
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+
+    /*Ponemos los links en línea y les ponemos separación*/
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a{
+    /*Se le quita el subrayado*/
+    text-decoration: none;
+    /*Le pone color a las letras*/
+    color: white;
+    /*Ponemos en negritas: */
+    font-weight: bold;
+}
+
+
+.productos{
+    padding: 20px;
+    text-align: center;
+}
+
+.producto{
+    /*Los pasteles, sus nombres y definiciones son bloques individuales*/
+    display: inline-block;
+    margin: 20px;
+}
+
+.producto img{
+    width: 200px;
+    /*Le damos redondeo a las orillas de las imágenes*/
+    border-radius: 20%;
+
+    /*Para el img:hoover*/
+    transition-duration: 1000ms;
+}
+
+/*Comportamiento cuando pasamos el mouse por encima*/
+.producto img:hover{
+width: 500px;
+}
+
+.nosotros{
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+}
+
+.vacantes{
+    text-align: center;
+    font-family: cursive;
+    background-color: aqua;
+    border: 5px solid blue;
+    
+}
+
+
+
+footer{
+    background-color: rgb(189, 168, 46);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
